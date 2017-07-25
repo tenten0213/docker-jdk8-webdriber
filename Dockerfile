@@ -7,5 +7,3 @@ RUN apt-get update \
   && apt-get update \
   && apt-get install -y google-chrome-stable xvfb fonts-ipafont-gothic fonts-ipafont-mincho aptitude \
   && aptitude install -y xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic
-ENV DISPLAY=:1
-RUN Xvfb :1 -screen 0 1024x768x24 &
